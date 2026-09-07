@@ -1,0 +1,25 @@
+/* 全要素のマージン・パディングを打ち消し、box-sizing を統一する */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* ページ全体を画面いっぱいにし、スクロールを禁止、背景は黒（レターボックスの帯） */
+html, body { width: 100%; height: 100%; overflow: hidden; background: #000; }
+
+/* body を中央寄せのフレックスコンテナにし、タッチ操作のブラウザ既定挙動と選択を無効化 */
+body { display: flex; align-items: center; justify-content: center;
+       touch-action: none; user-select: none; -webkit-user-select: none; }
+
+/* ゲーム全体をまとめるラッパー。canvas と同じ 16:9 サイズで中央に配置する */
+#game-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:  min(100vw, calc(100vh * 16 / 9));
+  height: min(100vh, calc(100vw * 9 / 16));
+}
+
+/* canvas は 16:9 のアスペクト比を保ったまま、画面からはみ出さない最大サイズで表示する */
+#game-canvas {
+  display: block;
+  width:  min(100vw, calc(100vh * 16 / 9));
+  height: min(100vh, calc(100vw * 9 / 16));
+}

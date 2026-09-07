@@ -1,0 +1,8 @@
+# OS / エディタが作る一時ファイル
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# ローカル専用の設定（権限など、共有すべきでないもの）
+.claude/settings.local.json
