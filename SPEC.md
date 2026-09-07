@@ -335,4 +335,7 @@ side-scroller-game/
 ## 19. 公開
 
 GitHub リポジトリを作成し、`main` ブランチのルートを GitHub Pages で公開する。
-公開URL: `https://<ユーザー名>.github.io/<リポジトリ名>/`
+**公開済み（2026-09-07）**
+
+- リポジトリ: https://github.com/Ksaiku/alpine-goat
+- プレイURL: **https://ksaiku.github.io/alpine-goat/**
